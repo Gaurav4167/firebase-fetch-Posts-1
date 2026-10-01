@@ -145,6 +145,11 @@ function editPost(ele) {
             addBtn.classList.add("d-none")
             updateBtn.classList.remove("d-none")
             hideSpinner("text-primary")
+            
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
 
         })
         .catch(err => {
